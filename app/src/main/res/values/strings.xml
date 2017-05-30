@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OF</string>
+    <string name="def_search">검색어 입력</string>
+    <string name="def_button">검색</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="add_scholar_num">학번 입력</string>
+    <string name="add_password">비밀번호 입력</string>
+    <string name="Confirm">확인</string>
+</resources>

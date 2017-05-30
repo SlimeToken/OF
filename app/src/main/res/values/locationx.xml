@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "location">
+        <item>"인제대학교"</item>
+        <item>삼방동</item>
+        <item>"김해천문대"</item>
+    </string-array>
+</resources>

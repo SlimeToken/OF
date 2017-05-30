@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.cs.inje.of"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/libDaumMapAndroid.jar')
+    compile files('libs/poi-3.16/poi-ooxml-3.16.jar')
+    compile files('libs/simple-side-drawer2.jar')
+    compile files('libs/poi-3.16/poi-3.16.jar')
+    compile files('libs/poi-3.16/poi-ooxml-schemas-3.16.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/http-Jars/commons-codec-1.9.jar')
+    compile files('libs/http-Jars/commons-logging-1.2.jar')
+    compile files('libs/http-Jars/httpclient-4.5.3.jar')
+    compile files('libs/http-Jars/httpcore-4.4.6.jar')
+    compile files('libs/http-Jars/jsoup-1.10.2.jar')
+}
